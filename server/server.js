@@ -53,6 +53,11 @@ const resolvers = {
       return pokedexData.find(pokemon => pokemon.name.english.toLowerCase() === name.toLowerCase());
     },
   },
+  BaseStats: {
+    // Resolver for handling field aliases
+    'SpAttack': (parent) => parent['Sp. Attack'],
+    'SpDefense': (parent) => parent['Sp. Defense'],
+  },
 };
 
 

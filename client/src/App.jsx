@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Details from './Details';
-import Pokemon from './Pokemons';
+import ListPokemon from './Components/ListPokemon';
+import Pokemon from './Components/Pokemons';
 import { Box, Heading } from '@chakra-ui/react';
 import {
   ApolloClient,
@@ -36,7 +36,7 @@ function App() {
         <Box maxW={1000} maxH="100%" mx="auto" px={10} pt={10} fontSize="sm" style={{ minHeight: '100vh' }}>
           <Heading mb={10}>Pokemon List</Heading>
           <Routes>
-            <Route exact path="/" element={<Details />} />
+            <Route exact path="/" element={<ListPokemon />} />
             <Route path="/pokemon/:pokemonName" element={<Pokemon />} />
           </Routes>
         </Box>

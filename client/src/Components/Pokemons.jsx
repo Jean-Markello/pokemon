@@ -1,6 +1,5 @@
-import { useState, useEffect } from 'react';
 import { useQuery } from "@apollo/client";
-import { FROM_NAME } from "./GraphQL/Queries";
+import { FROM_NAME } from "../GraphQL/Queries";
 import { useParams } from 'react-router-dom';
 
 function Pokemon() {

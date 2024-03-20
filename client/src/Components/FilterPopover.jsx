@@ -2,10 +2,10 @@
 
 import { Popover, Icon, VStack, Text, PopoverTrigger, PopoverContent, PopoverArrow, PopoverCloseButton, Button, PopoverBody, Flex } from '@chakra-ui/react';
 import { PropTypes } from 'prop-types'; // Import PropTypes
-import { GET_TYPE } from './GraphQL/Queries';
+import { GET_TYPE } from '../GraphQL/Queries';
 import { useQuery } from "@apollo/client";
 import { useState, useEffect  } from 'react'
-import FilterIcon from './icons/FilterIcon';
+import FilterIcon from '../icons/FilterIcon';
 
 const TypeItem= ({type, setColumnFilters, isActive}) => <Flex
     align="center"

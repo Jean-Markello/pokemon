@@ -2,7 +2,7 @@ import { Input, Icon, InputGroup, InputLeftElement, HStack } from '@chakra-ui/re
 import { PropTypes } from 'prop-types'; 
 import { FilterPopover } from './FilterPopover';
 //import { FilterPopover } from './FilterPopover';
-import SearchIcon  from './icons/SearchIcon';
+import SearchIcon  from '../icons/SearchIcon';
 
 
 const Filters = ({ columnFilters, setColumnFilters }) => {
